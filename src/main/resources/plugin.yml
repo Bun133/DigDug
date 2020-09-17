@@ -1,0 +1,36 @@
+name: Digdug
+version: ${project.version}
+main: com.bun133.digdug.Digdug
+api-version: 1.15
+authors: [Bun133]
+description: The hoster digdug game
+website: https://twitter.com/bun133_
+commands:
+  rank:
+    description: Show Rank of you
+    usage: /<command>
+
+  status:
+    description: Show your Point
+    usage: /<command>
+
+  game:
+    description: Game Command
+    usage: /<command> <start/stop>
+    permission: DigDug.op
+    permission-message: You don't have enough perm!
+
+  shop:
+    description: Shop Command. buy it!
+    usage: /<command>
+
+  addPoint:
+    description: AddPoint Debug Command
+    usage: /<command> <player> <point>
+    permission: DigDug.op
+    permission-message: You don't have enough perm!
+
+permissions:
+  DigDug.op:
+    default: op
+    description: OP Role
