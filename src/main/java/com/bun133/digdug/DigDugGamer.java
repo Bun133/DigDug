@@ -25,7 +25,7 @@ public class DigDugGamer extends BukkitRunnable implements Listener{
     public void onPlayerDigged(BlockBreakEvent e){
         if(!isStarting) return;
         if(PointSet.isIgnorable(e.getBlock().getType())) return;
-        e.setDropItems(false);
+        e.setDropItems(PointSet.getPoint(e.getBlock().getType())==0);
         addPoint(e.getPlayer(),PointSet.getPoint(e.getBlock().getType()));
     }
 

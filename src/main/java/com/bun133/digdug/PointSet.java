@@ -85,7 +85,7 @@ public class PointSet {
     }
 
     public static Integer getPoint(Material m) {
-        return points.getOrDefault(m, 1);
+        return points.getOrDefault(m, 0);
     }
 
 
